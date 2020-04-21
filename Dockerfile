@@ -1,8 +1,8 @@
 FROM ruby:2.6.6-slim
 
 LABEL "maintainer"="Patrick Jahns <github@patrickjahns.de>" \
-      "repository"="https://github.com/patrickjahns/dependabot-terraform-action" \
-      "homepage"="https://github.com/patrickjahns/dependabot-terraform-action" \
+      "repository"="https://github.com/plus3it/dependabot-terraform-action" \
+      "homepage"="https://github.com/plus3it/dependabot-terraform-action" \
       "com.github.actions.name"="dependabot-terraform-action" \
       "com.github.actions.description"="Run dependabot for terraform as github action" \
       "com.github.actions.icon"="check-circle" \
