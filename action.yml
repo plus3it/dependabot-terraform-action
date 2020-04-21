@@ -29,7 +29,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://patrickjahns/dependabot-terraform-action'
+  image: 'docker://plus3it/dependabot-terraform-action'
 branding:
   icon: 'package'
   color: 'orange'

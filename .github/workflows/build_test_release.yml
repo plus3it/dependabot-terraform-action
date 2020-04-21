@@ -14,7 +14,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: build container
-        run: docker build -t patrickjahns/dependabot-terraform-action:${{ github.sha }} .
+        run: docker build -t plus3it/dependabot-terraform-action:${{ github.sha }} .
       - name: test container
         run: test/test.sh ${{ github.sha }}
         env:
@@ -24,10 +24,10 @@ jobs:
         run: echo ${{ secrets.DOCKER_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
       - name: tag and push latest
         run: |
-          docker tag patrickjahns/dependabot-terraform-action:${{ github.sha }} patrickjahns/dependabot-terraform-action:latest
-          docker push patrickjahns/dependabot-terraform-action:latest
+          docker tag plus3it/dependabot-terraform-action:${{ github.sha }} plus3it/dependabot-terraform-action:latest
+          docker push plus3it/dependabot-terraform-action:latest
       - name: tag and push current release tag
         if: github.event_name == 'release' &&  github.event.action == 'published'
         run: |
-          docker tag patrickjahns/dependabot-terraform-action:${{ github.sha }} patrickjahns/dependabot-terraform-action:${{ github.event.release.tag_name }}
-          docker push patrickjahns/dependabot-terraform-action:${{ github.event.release.tag_name }}
+          docker tag plus3it/dependabot-terraform-action:${{ github.sha }} plus3it/dependabot-terraform-action:${{ github.event.release.tag_name }}
+          docker push plus3it/dependabot-terraform-action:${{ github.event.release.tag_name }}
