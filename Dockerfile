@@ -43,4 +43,4 @@ COPY --from=golang /go/tf_helpers $TF_HELPERS_PATH
 
 RUN chmod -R +x $TF_HELPERS_PATH
 
-# CMD ["run-action"]
+CMD ["run-action"]
