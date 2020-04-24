@@ -22,7 +22,7 @@ LABEL "maintainer"="Plus3IT" \
 
 WORKDIR /usr/src/app
 ENV DEPENDABOT_NATIVE_HELPERS_PATH="/usr/src/app/native-helpers"
-ENV TF_HELPERS_PATH ="$DEPENDABOT_NATIVE_HELPERS_PATH/terraform/bin"
+ENV TF_HELPERS_PATH="$DEPENDABOT_NATIVE_HELPERS_PATH/terraform/bin"
 ENV PATH="$TF_HELPERS_PATH:$PATH"
 
 COPY ./src /usr/src/app
