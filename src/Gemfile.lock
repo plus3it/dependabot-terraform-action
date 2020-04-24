@@ -1,7 +1,7 @@
 GIT
-  remote: https://github.com/plus3it/dependabot-core
-  revision: 248a4a4ef1fa1f413ce2e67e77fbf9e27fef9a91
-  branch: tf012
+  remote: https://github.com/patrickjahns/dependabot-core
+  revision: 285f18f1743636b0372873d4aee93ebc27c9925a
+  branch: feature_terraform_12
   specs:
     dependabot-bundler (0.117.5)
       dependabot-common (= 0.117.5)
@@ -74,20 +74,20 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.0)
-    aws-eventstream (1.1.0)
-    aws-partitions (1.299.0)
+    aws-eventstream (1.0.3)
+    aws-partitions (1.295.0)
     aws-sdk-codecommit (1.31.0)
       aws-sdk-core (~> 3, >= 3.71.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-core (3.94.0)
-      aws-eventstream (~> 1, >= 1.0.2)
+    aws-sdk-core (3.93.0)
+      aws-eventstream (~> 1.0, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
     aws-sdk-ecr (1.26.0)
       aws-sdk-core (~> 3, >= 3.71.0)
       aws-sigv4 (~> 1.1)
-    aws-sigv4 (1.1.2)
+    aws-sigv4 (1.1.1)
       aws-eventstream (~> 1.0, >= 1.0.2)
     citrus (3.0.2)
     commonmarker (0.21.0)
@@ -126,7 +126,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pandoc-ruby (2.1.4)
     parseconfig (1.0.8)
-    parser (2.7.1.1)
+    parser (2.7.1.0)
       ast (~> 2.4.0)
     public_suffix (4.0.4)
     rest-client (2.1.0)
